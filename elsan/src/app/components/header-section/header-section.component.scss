@@ -1,0 +1,66 @@
+@import "../../../scss/shared.scss";
+
+.header {
+    min-height: 89vh;
+    margin-bottom: 1rem;
+}
+
+.background {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../../assets/img/background_filtered.jpg);
+
+    opacity: 0.6;
+    // background-color: #67B4FD;
+    min-height: 89vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0%, 100% 63%, 0 87%);
+    position: absolute;
+    z-index: -1;
+}
+
+.hrefs__czym-sie-zajmujemy {
+    background-color: #e09f20;
+    margin-right: 0.5rem;
+}
+
+.hrefs__kontakt {
+    border: 1px solid black;
+}
+
+.header__logo {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+    @include respond-to(medium) {
+        width: 40%;
+    }
+}
+
+.header__content {
+    padding-left: 10px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    @include respond-to(medium) {
+        max-width: 50%;
+        padding-left: 5%;
+        padding-top: 3%;
+    }
+
+    & p {
+        margin-top: 1rem;
+        color: black;
+        font-size: 1.3rem;
+    }
+}
+
+.partners {
+    display: flex;
+    justify-content: center;
+}

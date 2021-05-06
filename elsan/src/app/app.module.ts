@@ -7,13 +7,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { MaterialModule } from './material/material.module';
-
-
+import { HeaderSectionComponent } from './components/header-section/header-section.component';
+import { CzymSieZajmujemySectionComponent } from './components/czym-sie-zajmujemy-section/czym-sie-zajmujemy-section.component';
+import { PartnersSectionComponent } from './components/partners-section/partners-section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderSectionComponent,
+    CzymSieZajmujemySectionComponent,
+    PartnersSectionComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
