@@ -10,6 +10,8 @@ import { MaterialModule } from './material/material.module';
 import { HeaderSectionComponent } from './components/header-section/header-section.component';
 import { CzymSieZajmujemySectionComponent } from './components/czym-sie-zajmujemy-section/czym-sie-zajmujemy-section.component';
 import { PartnersSectionComponent } from './components/partners-section/partners-section.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import { PartnersSectionComponent } from './components/partners-section/partners
     MaterialModule,
     AppRoutingModule,
     ReactiveFormsModule, 
+    SlickCarouselModule,
   ],
   providers: [
  
