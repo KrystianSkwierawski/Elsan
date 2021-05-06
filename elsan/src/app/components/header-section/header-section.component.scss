@@ -8,7 +8,7 @@
 .background {
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../../assets/img/background_filtered.jpg);
 
-    opacity: 0.6;
+    opacity: 0.5;
     // background-color: #67B4FD;
     min-height: 89vh;
     width: 100%;
@@ -40,8 +40,8 @@
 }
 
 .header__content {
-    padding-left: 10px;
-    padding-top: 10px;
+    padding-left: 1rem;
+    padding-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,13 +50,47 @@
     @include respond-to(medium) {
         max-width: 50%;
         padding-left: 5%;
-        padding-top: 3%;
+        flex-direction: row;
+        padding-top: 2%;
     }
 
     & p {
         margin-top: 1rem;
         color: black;
         font-size: 1.3rem;
+    }
+}
+
+.content__left {
+    display: flex;
+    flex-direction: column;
+}
+
+.content__right {
+    display: none;
+
+    @include respond-to(medium) {       
+        color: #1B80C4;
+        display: flex;
+        text-align: center;
+        font-size: 1rem;
+        height: 45%;
+        width: 45%;
+        position: absolute;
+        bottom: 30%;
+        right: 2%;
+        transform: rotate(-5.5deg);
+    }
+
+    & div {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+.right__serwis-sprzedaz, .right__rtv-agd {
+    & figcaption{
+        font-size:  1.3rem;
     }
 }
 
