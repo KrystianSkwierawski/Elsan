@@ -6,7 +6,7 @@
 
 .background {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../../assets/img/background.jpg);
-    // background-color: #afb6bb;
+    background-color: #afb6bb;
     min-height: 89vh;
     width: 100%;
     background-repeat: no-repeat;
@@ -27,6 +27,7 @@
 }
 
 .header__logo {
+    margin-top: 1rem;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -61,6 +62,7 @@
         margin-top: 1.2rem;
         margin-bottom: 0;
         text-align: center;
+        color: black
     }
 }
 
@@ -76,7 +78,7 @@
         position: absolute;
         bottom: 30%;
         right: 2%;
-        transform: rotate(-5.5deg);
+        transform: rotate(-7.8deg);
     }
     & div {
         margin-left: 5%;

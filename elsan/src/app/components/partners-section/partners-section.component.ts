@@ -9,17 +9,27 @@ declare var $: any;
 export class PartnersSectionComponent implements OnInit {
 
   slides = [
-    { img: "../../../assets/img/partners/Philips_logo_new.svg" },
-    { img: "../../../assets/img/partners/Philips_logo_new.svg" },
-    { img: "../../../assets/img/partners/Philips_logo_new.svg" },
-    { img: "../../../assets/img/partners/Philips_logo_new.svg" },
-    { img: "../../../assets/img/partners/Philips_logo_new.svg" }
+    { img: "http://www.elsan24.pl/img/autoryzacje/avent-01.svg" },
+    { img: "http://www.elsan24.pl/img/autoryzacje/finlux-01.svg" },
+    { img: "http://www.elsan24.pl/img/autoryzacje/hitachi-01.svg" },
+    { img: "http://www.elsan24.pl/img/autoryzacje/loewe-01.svg" },
+    { img: "http://www.elsan24.pl/img/autoryzacje/panasonic-01.svg" },
+    { img: "http://www.elsan24.pl/img/autoryzacje/pioneer.svg" },
+    { img: "http://www.elsan24.pl/img/autoryzacje/saeco-01.svg" },
+    { img: "http://www.elsan24.pl/img/autoryzacje/sencor-01.svg" },
+    { img: "http://www.elsan24.pl/img/autoryzacje/sharp-01.svg" },
+    { img: "http://www.elsan24.pl/img/autoryzacje/tcl-01.svg" },
+    { img: "http://www.elsan24.pl/img/autoryzacje/telefunken-01.svg" },
+    { img: "http://www.elsan24.pl/img/autoryzacje/thomson-01.svg" },
+    { img: "http://www.elsan24.pl/img/autoryzacje/toshiba-01.svg" },
+    { img: "http://www.elsan24.pl/img/autoryzacje/vestel-01.svg" },
   ];
   slideConfig = {
     "slidesToShow": 3, 
     "slidesToScroll": 3, 
     autoplay: true, 
-    speed: 1500, 
+    autoplaySpeed: 5000,
+    speed: 2000,
     prevArrow: false,
     nextArrow: false
   };
