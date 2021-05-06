@@ -1,27 +1,36 @@
-@import '../../../scss/shared.scss';
+@import "../../../scss/shared.scss";
 
-.home-top {
-  clip-path: polygon(0 0, 100% 0%, 100% 63%, 0 87%);
-  min-height: 89vh;
-  background:
-  /* top, transparent black, faked with gradient */ linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),
-  /* bottom, image */ url(https://www.primulator.pl/media/Akcja-Serwis-2020/primulator-serwis-wiz.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+.top {
+    min-height: 89vh;
+    width: 100vw;
 }
 
-.home-top__logo {
-    height: 30%;
+.background {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+       url(https://scontent-frt3-2.xx.fbcdn.net/v/t31.18172-8/15304350_1319807361403662_2949147351759116556_o.jpg?_nc_cat=110&ccb=1-3&_nc_sid=9267fe&_nc_ohc=Q3m9iSD60kEAX8UNvgN&_nc_ht=scontent-frt3-2.xx&oh=b09d72df8df81160b1f1abb99074229d&oe=60BA6104);
+
+
+       opacity: 0.8;
+    // background-color: #67B4FD;
+    min-height: 89vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0%, 100% 63%, 0 87%);
+    position: fixed;
+    z-index: -1;
+}
+
+.top__logo {
+    height: auto;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 40%;
 }
 
-.home-top__content {
-    position: absolute;
-    left: 5%;
-    top: 25%;
-    transform: translateY(-25%);
+.top__content {
+    padding-left: 5%;
+    padding-top: 5%;
     max-width: 50%;
     display: flex;
     flex-direction: column;
@@ -30,7 +39,12 @@
 
     & p {
         margin-top: 1rem;
-        color: white;
-        font-size: 1.1rem;
+        color: black;
+        font-size: 1.3rem;
     }
+}
+
+.partners {
+    display: flex;
+    justify-content: center;
 }
