@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthorizeService } from '../../../api-authorization/authorize.service';
 
 @Component({
   selector: 'app-home',

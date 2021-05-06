@@ -1,0 +1,36 @@
+@import '../../../scss/shared.scss';
+
+.home-top {
+  clip-path: polygon(0 0, 100% 0%, 100% 63%, 0 87%);
+  min-height: 89vh;
+  background:
+  /* top, transparent black, faked with gradient */ linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),
+  /* bottom, image */ url(https://www.primulator.pl/media/Akcja-Serwis-2020/primulator-serwis-wiz.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-top__logo {
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.home-top__content {
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    transform: translateY(-25%);
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    & p {
+        margin-top: 1rem;
+        color: white;
+        font-size: 1.1rem;
+    }
+}
