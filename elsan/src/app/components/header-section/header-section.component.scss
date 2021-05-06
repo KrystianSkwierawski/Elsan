@@ -2,7 +2,7 @@
 
 .header {
     min-height: 89vh;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .background {
@@ -69,11 +69,11 @@
 .content__right {
     display: none;
 
-    @include respond-to(medium) {       
-        color: #1B80C4;
+    @include respond-to(medium) {
+        color: black;
         display: flex;
         text-align: center;
-        font-size: 1rem;
+        font-size: 1.5rem;
         height: 45%;
         width: 45%;
         position: absolute;
@@ -88,9 +88,10 @@
     }
 }
 
-.right__serwis-sprzedaz, .right__rtv-agd {
-    & figcaption{
-        font-size:  1.3rem;
+.right__serwis-sprzedaz,
+.right__rtv-agd {
+    & figcaption {
+        font-size: 1.3rem;
     }
 }
 
