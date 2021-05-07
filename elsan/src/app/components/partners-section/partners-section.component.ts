@@ -28,7 +28,7 @@ export class PartnersSectionComponent implements OnInit {
     "slidesToShow": 3, 
     "slidesToScroll": 3, 
     autoplay: true, 
-    autoplaySpeed: 5000,
+    autoplaySpeed: 2500,
     speed: 2000,
     prevArrow: false,
     nextArrow: false

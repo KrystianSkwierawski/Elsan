@@ -1,0 +1,38 @@
+@import "../../../scss/shared.scss";
+h2 {
+    color: #e09f20;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.czym-sie-zajmujemy-container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.czym-sie-zajmujemy {
+    overflow-x: hidden;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @include respond-to(medium) {
+        flex-direction: row;
+    }
+    & div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+        width: 100%;
+        @include respond-to(medium) {
+            width: calc(100% / 4);
+        }
+    }
+}
+
+.czym-sie-zajmujemy__icon {
+    width: 25%;
+    height: auto;
+    align-self: center;
+    margin-bottom: 2rem;
+}

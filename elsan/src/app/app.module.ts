@@ -11,6 +11,7 @@ import { HeaderSectionComponent } from './components/header-section/header-secti
 import { CzymSieZajmujemySectionComponent } from './components/czym-sie-zajmujemy-section/czym-sie-zajmujemy-section.component';
 import { PartnersSectionComponent } from './components/partners-section/partners-section.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { NapiszDoNasSectionComponent } from './components/napisz-do-nas-section/napisz-do-nas-section.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     HeaderSectionComponent,
     CzymSieZajmujemySectionComponent,
     PartnersSectionComponent,
+    NapiszDoNasSectionComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
