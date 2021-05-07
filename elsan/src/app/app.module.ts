@@ -25,10 +25,10 @@ import { NapiszDoNasSectionComponent } from './components/napisz-do-nas-section/
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
+    MaterialModule,
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
-    MaterialModule,
     AppRoutingModule,
     ReactiveFormsModule, 
     SlickCarouselModule,

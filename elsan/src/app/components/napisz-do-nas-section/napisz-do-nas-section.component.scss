@@ -11,8 +11,30 @@ h2 {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 5%;
+    padding-bottom: 1rem;
+}
+
+.napisz-do-nas {
+    margin-top: 5%;
 }
 
 .czym-sie-zajmujemy {
     margin-top: 5%;
+}
+
+mat-form-field {
+    margin-top: 1rem;
+    display: block;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+.send-message-button {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-self: center;
+    background-color: #E09F20;
 }

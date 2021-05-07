@@ -2,6 +2,46 @@
     <div class="napisz-do-nas-container">
         <h2>Napisz do nas</h2>
         <hr>
-        <p>assaddsasadsad</p>
+        <div class="container napisz-do-nas">
+
+            <form [formGroup]="form">
+                <div class="row">
+                    <mat-form-field appearance="outline" class="col-6">
+                        <mat-label>Title</mat-label>
+                        <input formControlName="title" matInput required>
+                        <mat-error *ngIf="form.invalid">Title is required</mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" class="col-6">
+                        <mat-label>Title</mat-label>
+                        <input formControlName="title" matInput required>
+                        <mat-error *ngIf="form.invalid">Title is required</mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" class="col-6">
+                        <mat-label>Title</mat-label>
+                        <input formControlName="title" matInput required>
+                        <mat-error *ngIf="form.invalid">Title is required</mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" class="col-6">
+                        <mat-label>Title</mat-label>
+                        <input formControlName="title" matInput required>
+                        <mat-error *ngIf="form.invalid">Title is required</mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" class="col">
+                        <mat-label>Title</mat-label>
+                        <textarea formControlName="title" matInput required></textarea>
+                        <mat-error *ngIf="form.invalid">Title is required</mat-error>
+                    </mat-form-field>
+
+
+                </div>
+
+                <button mat-flat-button class="send-message-button px-4 py-2" [disabled]="form.invalid" aria-label="create">Wyślij</button>
+            </form>
+
+        </div>
     </div>
 </section>
