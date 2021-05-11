@@ -14,6 +14,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { NapiszDoNasSectionComponent } from './components/napisz-do-nas-section/napisz-do-nas-section.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FaqSectionComponent } from './components/faq-section/faq-section.component';
+import { GoogleMapSectionComponent } from './components/google-map-section/google-map-section.component';
 
 
 
@@ -27,6 +28,7 @@ import { FaqSectionComponent } from './components/faq-section/faq-section.compon
     NapiszDoNasSectionComponent,
     FooterComponent,
     FaqSectionComponent,
+    GoogleMapSectionComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

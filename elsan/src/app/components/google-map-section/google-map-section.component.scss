@@ -1,0 +1,16 @@
+@import "../../../scss/shared.scss";
+
+
+section {
+    height: 350px;
+    margin-top: calc(5% + 2rem);
+
+    @include respond-to(medium) {
+        height: 450px;
+
+    }
+}
+
+#map {
+    height: 100%;
+}
