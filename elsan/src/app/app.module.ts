@@ -12,6 +12,7 @@ import { CzymSieZajmujemySectionComponent } from './components/czym-sie-zajmujem
 import { PartnersSectionComponent } from './components/partners-section/partners-section.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { NapiszDoNasSectionComponent } from './components/napisz-do-nas-section/napisz-do-nas-section.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { NapiszDoNasSectionComponent } from './components/napisz-do-nas-section/
     CzymSieZajmujemySectionComponent,
     PartnersSectionComponent,
     NapiszDoNasSectionComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
