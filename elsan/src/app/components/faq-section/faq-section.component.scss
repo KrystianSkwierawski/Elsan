@@ -1,0 +1,54 @@
+@import "../../../scss/shared.scss";
+h2 {
+    color: #e09f20;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    padding-top: 1rem;
+}
+
+.faqs-container {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+.faqs {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.faq {
+    width: 100%;
+    border-bottom: 1px solid #AFB6BB;
+    @include respond-to(medium) {
+        width: 60%;
+    }
+}
+
+.faq-button {
+    @include reset-button;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.2rem;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    &:hover {
+        background-color: #AFB6BB;
+    }
+    & p {
+        margin-bottom: 0;
+    }
+}
+
+.answer {
+    margin: 10px;
+}

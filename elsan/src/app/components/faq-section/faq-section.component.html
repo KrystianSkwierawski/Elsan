@@ -1,0 +1,20 @@
+<section>
+    <div class="faqs-container">
+        <hr>
+        <h2>FAQ</h2>
+
+        <div class="faqs">
+            <div class="faq" *ngFor="let faq of faqs; let index = index" F>
+                <button class="faq-button" (click)="toggleAnswer(index)">
+                   <p>{{faq.question}}</p> 
+                    <i *ngIf="!faq.isSelected" class="fas fa-caret-right"></i>
+                    <i *ngIf="faq.isSelected" class="fas fa-caret-down"></i>
+                </button>
+
+                <div [ngClass]="{'d-none': !faq.isSelected}" class="answer">
+                    <p>{{faq.answer}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

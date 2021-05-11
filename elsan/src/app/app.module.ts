@@ -13,6 +13,8 @@ import { PartnersSectionComponent } from './components/partners-section/partners
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { NapiszDoNasSectionComponent } from './components/napisz-do-nas-section/napisz-do-nas-section.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { FaqSectionComponent } from './components/faq-section/faq-section.component';
+
 
 
 @NgModule({
@@ -24,6 +26,7 @@ import { FooterComponent } from './components/footer/footer.component';
     PartnersSectionComponent,
     NapiszDoNasSectionComponent,
     FooterComponent,
+    FaqSectionComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
