@@ -48,32 +48,6 @@ export class NapiszDoNasSectionComponent implements OnInit {
     return '';
   }
 
-  async onSendMessage() {
-    const message = await this.getMessage();
-    console.log(message);
-
-    await this.sendMessage(message);
-
-    //wyczysc form jezeli powiodlo sie sukcesem i wyswietl powiadomienie
-    //jak sie nie powiedznie wyswietl powiadomienie
-  }
-
-  async sendMessage(message: Message) {
-    const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-
-    await this.http.post('https://formspree.io/f/xyylekjy',
-      {
-        name: message.name,
-        replyto: message.email,
-        message: message.content
-      },
-      { 'headers': headers }).subscribe(
-        response => {
-          console.log(response);
-        }
-      );
-  }
-
   async getMessage(): Promise<Message> {
     const o_message: Message = {
       name: this.form.get('name').value,
@@ -84,5 +58,47 @@ export class NapiszDoNasSectionComponent implements OnInit {
 
     return o_message;
   }
+
+  async onSendMessage() {
+    const message = await this.getMessage();
+    this.sendMessage(message);
+  }
+
+  sendMessage(message: Message) {
+    const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+
+    this.http.post('https://formspree.io/f/xyylekjy',
+      {
+        name: message.name,
+        replyto: message.email,
+        message: message.content
+      },
+      { 'headers': headers }).subscribe(
+        response => {
+          this.handleResponse(response);
+        }
+      );
+  }
+
+  handleResponse(response: any) {
+    if (response.ok) {
+      this.resetForm();
+
+      alert("Wiadomość wysłana");
+      return;
+    }
+
+    alert("Wiadomość nie wysłana");
+  }
+
+  resetForm() {
+    const form: HTMLFormElement = <HTMLFormElement>document.querySelector(".napisz-do-nas__form");
+
+    if (form) {
+      form.reset();
+      this.form.get('topic').setValue("informacje ogólne");
+    }
+  }
+
 }
 
