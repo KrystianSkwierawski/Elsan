@@ -7,39 +7,58 @@
             <form [formGroup]="form">
                 <div class="row">
                     <mat-form-field appearance="outline" class="col-6">
-                        <mat-label>Title</mat-label>
-                        <input formControlName="title" matInput required>
-                        <mat-error *ngIf="form.invalid">Title is required</mat-error>
+                        <mat-label>Imię i nazwisko</mat-label>
+                        <input formControlName="name" matInput required>
+                        <mat-error *ngIf="form.invalid">Imię i nazwisko jest wymagane</mat-error>
                     </mat-form-field>
 
                     <mat-form-field appearance="outline" class="col-6">
-                        <mat-label>Title</mat-label>
-                        <input formControlName="title" matInput required>
-                        <mat-error *ngIf="form.invalid">Title is required</mat-error>
+                        <mat-label>Number telefonu</mat-label>
+                        <input formControlName="phoneNumber" matInput required pattern="[0-9]{3}\s?[0-9]{3}\s?[0-9]{3}">
+                        <mat-error *ngIf="form.invalid">{{getErrorMessageFieldPhoneNumber()}}</mat-error>
                     </mat-form-field>
 
                     <mat-form-field appearance="outline" class="col-6">
-                        <mat-label>Title</mat-label>
-                        <input formControlName="title" matInput required>
-                        <mat-error *ngIf="form.invalid">Title is required</mat-error>
+                        <mat-label>Adres email</mat-label>
+                        <input formControlName="email" matInput required>
+                        <mat-error *ngIf="form.invalid">Adres email jest wymagany</mat-error>
                     </mat-form-field>
 
+
+                    <!-- <mat-form-field appearance="outline" class="col-6">
+                        <mat-label>Temat</mat-label>
+                        <select formControlName="topic" matNativeControl required>
+                          <option selected="selected" value="volvo">Volvo</option>
+                          <option value="saab">Saab</option>
+                          <option value="mercedes">Mercedes</option>
+                          <option value="audi">Audi</option>
+                        </select>
+                        <mat-error *ngIf="form.invalid">Temat jest wymagany</mat-error>
+                      </mat-form-field> -->
+
                     <mat-form-field appearance="outline" class="col-6">
-                        <mat-label>Title</mat-label>
-                        <input formControlName="title" matInput required>
-                        <mat-error *ngIf="form.invalid">Title is required</mat-error>
+                        <mat-label>Temat</mat-label>
+                        <mat-select formControlName="topic" required>
+                            <mat-option value="informacje ogólne">informacje ogólne</mat-option>
+                            <mat-option value="zgłoszenia serwisowe">zgłoszenia serwisowe</mat-option>
+                            <mat-option value="współpraca">współpraca</mat-option>
+                        </mat-select>
+                        <mat-error>Temat jest wymagany</mat-error>
                     </mat-form-field>
+
 
                     <mat-form-field appearance="outline" class="col">
-                        <mat-label>Title</mat-label>
-                        <textarea formControlName="title" matInput required></textarea>
-                        <mat-error *ngIf="form.invalid">Title is required</mat-error>
+                        <mat-label>Wiadomość</mat-label>
+                        <textarea formControlName="message" matInput required></textarea>
+                        <mat-error *ngIf="form.invalid">Wiadomość jest wymagana</mat-error>
                     </mat-form-field>
 
 
                 </div>
 
-                <button mat-flat-button class="send-message-button px-4 py-2" [disabled]="form.invalid" aria-label="create">Wyślij</button>
+                <button mat-flat-button class="send-message-button px-4 py-2" [disabled]="form.invalid"
+                (click)="sendMessage()"
+                    aria-label="wyślij">Wyślij</button>
             </form>
 
         </div>
