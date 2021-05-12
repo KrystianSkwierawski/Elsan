@@ -42,7 +42,7 @@ export class NapiszDoNasSectionComponent implements OnInit {
     }
 
     if (field.hasError('pattern')) {
-      return 'Number telefonu musi być prawidłowy {256789572} lub {256 789 572}';
+      return 'Number telefonu musi być prawidłowy - {256789572} lub {256 789 572}';
     }
 
     return '';
