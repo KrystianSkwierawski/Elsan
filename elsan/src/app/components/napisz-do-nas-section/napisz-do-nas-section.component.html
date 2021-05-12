@@ -6,37 +6,25 @@
 
             <form [formGroup]="form">
                 <div class="row">
-                    <mat-form-field appearance="outline" class="col-6">
+                    <mat-form-field appearance="outline" class="col col-md-6">
                         <mat-label>Imię i nazwisko</mat-label>
                         <input formControlName="name" matInput required>
                         <mat-error *ngIf="form.invalid">Imię i nazwisko jest wymagane</mat-error>
                     </mat-form-field>
 
-                    <mat-form-field appearance="outline" class="col-6">
+                    <mat-form-field appearance="outline" class="col col-md-6">
                         <mat-label>Number telefonu</mat-label>
                         <input formControlName="phoneNumber" matInput required pattern="[0-9]{3}\s?[0-9]{3}\s?[0-9]{3}">
                         <mat-error *ngIf="form.invalid">{{getErrorMessageFieldPhoneNumber()}}</mat-error>
                     </mat-form-field>
 
-                    <mat-form-field appearance="outline" class="col-6">
+                    <mat-form-field appearance="outline" class="col col col-md-6">
                         <mat-label>Adres email</mat-label>
                         <input formControlName="email" matInput required>
                         <mat-error *ngIf="form.invalid">Adres email jest wymagany</mat-error>
                     </mat-form-field>
 
-
-                    <!-- <mat-form-field appearance="outline" class="col-6">
-                        <mat-label>Temat</mat-label>
-                        <select formControlName="topic" matNativeControl required>
-                          <option selected="selected" value="volvo">Volvo</option>
-                          <option value="saab">Saab</option>
-                          <option value="mercedes">Mercedes</option>
-                          <option value="audi">Audi</option>
-                        </select>
-                        <mat-error *ngIf="form.invalid">Temat jest wymagany</mat-error>
-                      </mat-form-field> -->
-
-                    <mat-form-field appearance="outline" class="col-6">
+                    <mat-form-field appearance="outline" class="col col-md-6">
                         <mat-label>Temat</mat-label>
                         <mat-select formControlName="topic" required>
                             <mat-option value="informacje ogólne">informacje ogólne</mat-option>

@@ -1,6 +1,5 @@
-// section {
-//     background-color: #afb6bb;
-// }
+@import "../../../scss/shared.scss";
+
 h2 {
     color: #e09f20;
     text-align: center;
@@ -17,6 +16,10 @@ h2 {
 
 .napisz-do-nas {
     margin-top: 2rem;
+
+       @include respond-to(medium) {
+        width: 80%;
+    }
 }
 
 .czym-sie-zajmujemy {
