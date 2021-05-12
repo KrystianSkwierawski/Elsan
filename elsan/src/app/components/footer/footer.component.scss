@@ -1,11 +1,19 @@
 @import "../../../scss/shared.scss";
+
+footer {
+    background-color: #00275e;
+}
+
 .about-us {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us__info {
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1rem;
-    padding-bottom: 1rem;
     width: 100%;
-    background-color: #00275E;
     text-align: center;
     color: white;
     display: flex;
@@ -22,13 +30,12 @@
     }
     & div {
         margin-top: 1rem;
-        margin-bottom: 1rem;
         flex-grow: 1;
     }
 }
 
-.about-us__title {
-    color: #E09F20;
+.info__title {
+    color: #e09f20;
     font-weight: bold;
 }
 
@@ -36,8 +43,26 @@
     width: 100%;
     padding: 1rem;
     background-color: #001346;
-    color: #AFB6BB;
+    color: #afb6bb;
     & p {
         margin-bottom: 0;
+    }
+}
+
+.social-medias {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+
+    & a{
+        color: white;
+        font-size: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+        &:hover{
+            opacity: .8;
+        }
     }
 }
