@@ -1,3 +1,4 @@
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
@@ -10,7 +11,7 @@ export class NapiszDoNasSectionComponent implements OnInit {
 
   form: FormGroup
 
-  constructor(private formBuilder: FormBuilder) { };
+  constructor(private formBuilder: FormBuilder, private http: HttpClient) { };
 
   ngOnInit(): void {
     this.form = this.formBuilder.group({
@@ -47,7 +48,41 @@ export class NapiszDoNasSectionComponent implements OnInit {
     return '';
   }
 
-  sendMessage(){
-    console.log(this.form);
+  async onSendMessage() {
+    const message = await this.getMessage();
+    console.log(message);
+
+    await this.sendMessage(message);
+
+    //wyczysc form jezeli powiodlo sie sukcesem i wyswietl powiadomienie
+    //jak sie nie powiedznie wyswietl powiadomienie
+  }
+
+  async sendMessage(message: Message) {
+    const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+
+    await this.http.post('https://formspree.io/f/xyylekjy',
+      {
+        name: message.name,
+        replyto: message.email,
+        message: message.content
+      },
+      { 'headers': headers }).subscribe(
+        response => {
+          console.log(response);
+        }
+      );
+  }
+
+  async getMessage(): Promise<Message> {
+    const o_message: Message = {
+      name: this.form.get('name').value,
+      email: this.form.get('email').value,
+      content: this.form.get('message').value,
+
+    };
+
+    return o_message;
   }
 }
+
