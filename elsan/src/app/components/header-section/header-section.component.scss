@@ -1,9 +1,8 @@
 @import "../../../scss/shared.scss";
 .header {
-    min-height: 89vh;
-    margin-bottom: 1.5rem;
+    width: 100%;
+    height: auto;
 }
-
 .background {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../../assets/img/background.jpg);
     background-color: #afb6bb;
@@ -28,27 +27,28 @@
 
 .header__logo {
     margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+    width: 200px;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    @include respond-to(large) {
-        width: 40%;
-    }
 }
 
 .header__content {
+    padding-top: 8%;
+    padding-bottom: 8%;
     padding-left: 1rem;
     padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    @include respond-to(large) {
-        max-width: 50%;
-        padding-left: 5%;
-        flex-direction: row;
-        padding-top: 3%;
+    @include respond-to(medium) {
+        width: 60%;
+    }
+    @include respond-to(extra-large) {
+        width: 50%;
     }
     & p {
         color: black;
@@ -79,34 +79,6 @@
     padding: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-}
-
-.content__right {
-    display: none;
-    @include respond-to(large) {
-        color: black;
-        display: flex;
-        text-align: center;
-        font-size: 1.5rem;
-        height: 45%;
-        width: 45%;
-        position: absolute;
-        bottom: 30%;
-        right: 2%;
-        transform: rotate(-7.8deg);
-        text-shadow: 1px 1px white;
-    }
-    & div {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-}
-
-.right__serwis-sprzedaz,
-.right__rtv-agd {
-    & figcaption {
-        font-size: 1.6rem;
-    }
 }
 
 .partners {
