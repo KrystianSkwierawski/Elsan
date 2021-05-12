@@ -12,6 +12,10 @@ h2 {
     margin-right: 5%;
     margin-top: 5%;
     padding-bottom: 1rem;
+
+    @include respond-to(medium) {
+        margin-top: 1rem;
+    }
 }
 
 .napisz-do-nas {

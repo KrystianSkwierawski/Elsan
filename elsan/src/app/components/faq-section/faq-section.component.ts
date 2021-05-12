@@ -10,7 +10,7 @@ export class FaqSectionComponent implements OnInit {
   faqs: Faq[] = [
     {
       question: "Czy jesteście serwisem sony/philips?",
-      answer: "Tak, jesteśmy jedynym autoryzowanym serwisem Sony i Philips w Słupsku.",
+      answer: `Tak, jesteśmy jedynym autoryzowanym serwisem Sony i Philips w Słupsku.`,
       isSelected: false
     },
     {
