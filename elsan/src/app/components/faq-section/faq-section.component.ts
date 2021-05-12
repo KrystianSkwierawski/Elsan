@@ -38,10 +38,7 @@ export class FaqSectionComponent implements OnInit {
   }
 
   toggleAnswer(index: number){
-    console.log(this.faqs[index].isSelected );
     this.faqs[index].isSelected = !this.faqs[index].isSelected;
-    console.log(this.faqs[index].isSelected );
-
   }
 
 }
