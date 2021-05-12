@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-// import { google } from '@google/maps';
-// import {} from '@types/googlemaps';
 declare var google: any;
 
 @Component({
