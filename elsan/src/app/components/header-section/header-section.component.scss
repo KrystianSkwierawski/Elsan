@@ -29,6 +29,10 @@ section {
 .hrefs__czym-sie-zajmujemy {
     background-color: #e09f20;
     margin-right: 0.5rem;
+
+    &:hover{
+        color: black;
+    }
 }
 
 .hrefs__kontakt {
