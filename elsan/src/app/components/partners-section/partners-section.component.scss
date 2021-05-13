@@ -1,6 +1,15 @@
+@import "../../../scss/shared.scss";
+
+
 .partners {
+    margin-top: 10%;
     margin-bottom: 6rem;
-    margin-top: 1rem;
+
+    @include respond-to(medium) {
+        margin-top: 0;
+
+    }
+
     & img {
         max-height: 100px;
         padding-right: 1rem;
