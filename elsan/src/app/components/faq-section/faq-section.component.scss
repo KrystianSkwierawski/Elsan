@@ -1,9 +1,10 @@
 @import "../../../scss/shared.scss";
 h2 {
-    color: #e09f20;
     text-align: center;
     margin-bottom: 0.5rem;
     padding-top: 1rem;
+    color: #e09f20;
+
 }
 
 .faqs-container {
@@ -36,12 +37,12 @@ h2 {
 
 .faq-button {
     @include reset-button;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
     font-size: 1.2rem;
-    width: 100%;
     font-weight: bold;
     margin-bottom: 0;
     padding-top: 1rem;

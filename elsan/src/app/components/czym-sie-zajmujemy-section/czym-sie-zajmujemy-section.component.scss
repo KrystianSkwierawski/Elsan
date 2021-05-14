@@ -1,9 +1,9 @@
 @import "../../../scss/shared.scss";
 h2 {
-    color: #e09f20;
-    text-align: center;
     margin-bottom: 0.5rem;
     padding-top: 1rem;
+    color: #e09f20;
+    text-align: center;
 }
 
 .czym-sie-zajmujemy-container {
@@ -23,15 +23,16 @@ h2 {
         flex-wrap: wrap;
     }
     & div {
+        width: 100%;
         margin-top: 15%;
         display: flex;
         flex-direction: column;
-        width: 100%;
-       padding-left: .5rem;
-       padding-right: .5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
         @include respond-to(medium) {
-            margin-top: 1rem;
             width: 50%;
+
+            margin-top: 1rem;
             margin-bottom: 10%;
         }
         @include respond-to(large) {
@@ -43,7 +44,7 @@ h2 {
         & p {
             font-size: 0.9rem;
         }
-        &:first-child{
+        &:first-child {
             margin-top: 1rem;
         }
     }
