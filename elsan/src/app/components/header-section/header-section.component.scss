@@ -10,19 +10,8 @@ section {
     display: flex;
     height: auto;
     min-height: calc(100vh - 2rem - 54px);
-}
-
-.background { 
-    min-height: calc(100vh - 2rem - 54px);
-    width: 100%;
-    background-repeat: no-repeat;
+    background-image: url("assets/img/background.webp");
     background-size: cover;
-    clip-path: polygon(0 0, 100% 0%, 100% 63%, 0 87%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #afb6bb;
-    z-index: -1;
 }
 
 .hrefs__czym-sie-zajmujemy {
