@@ -44,15 +44,10 @@ section {
     margin-bottom: auto;
     border-radius: 12px;
     padding: 1rem;
-    margin-top: 1rem;
+    margin-top: auto;
     margin-left: 5%;
     margin-right: 5%;
-    background-color: rgba(0, 0, 0, 0.9);
-
-
-    @include respond-to(very-small) {
-        margin-top: auto;
-    }
+    background-color: rgba(0, 0, 0, 0.9);]
 
     @include respond-to(medium) {
         width: 70%;
