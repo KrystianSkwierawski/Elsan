@@ -8,7 +8,7 @@ declare var $: any;
 })
 export class PartnersSectionComponent implements OnInit {
 
-  basePartnersPath: string = "../../../assets/img/partners/";
+  basePartnersPath: string = "assets/img/partners/";
 
   slides = [
     { img: "avent-01.svg" },
