@@ -9,6 +9,7 @@ header {
 section {
     display: flex;
     height: auto;
+    padding-bottom: 1rem;
     min-height: calc(100vh - 2rem - 54px);
     background-image: url(~src/assets/img/background.webp);
     background-size: cover;
@@ -38,7 +39,6 @@ section {
 }
 
 .header-content {
-    padding-bottom: 1rem;
     width: 90%;
     margin-bottom: auto;
     border-radius: 12px;
