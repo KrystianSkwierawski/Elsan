@@ -4,7 +4,7 @@ h2 {
     margin-bottom: 0.5rem;
     padding-top: 1rem;
     color: #e09f20;
-
+    font-size: 2.8rem;
 }
 
 .faqs-container {
@@ -15,6 +15,11 @@ h2 {
 
     @include respond-to(medium) {
         margin-top: 1rem;
+    }
+
+    
+    & hr{
+        margin-top: 2rem;
     }
 }
 
