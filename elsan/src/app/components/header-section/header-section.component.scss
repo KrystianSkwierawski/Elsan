@@ -38,6 +38,7 @@ section {
 }
 
 .header-content {
+    margin-bottom: 1rem;
     width: 90%;
     margin-bottom: auto;
     border-radius: 12px;
@@ -73,6 +74,8 @@ section {
 
     & p,
     h1 {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
         color: white;
     }
 }
