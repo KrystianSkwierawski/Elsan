@@ -13,7 +13,7 @@ section {
 }
 
 .background { 
-    min-height: 100vh;
+    min-height: calc(100vh - 2rem - 54px);
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,7 +21,6 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../../assets/img/background.jpg);
     background-color: #afb6bb;
     z-index: -1;
 }

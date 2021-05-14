@@ -3,12 +3,7 @@
 
 .partners {
     margin-top: 10%;
-    margin-bottom: 6rem;
-
-    @include respond-to(medium) {
-        margin-top: 0;
-
-    }
+    margin-bottom: 10%;
 
     & img {
         max-height: 100px;
