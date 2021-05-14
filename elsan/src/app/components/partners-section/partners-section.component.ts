@@ -8,21 +8,24 @@ declare var $: any;
 })
 export class PartnersSectionComponent implements OnInit {
 
+  basePartnersPath: string = "../../../assets/img/partners/";
+
   slides = [
-    { img: "http://www.elsan24.pl/img/autoryzacje/avent-01.svg" },
-    { img: "http://www.elsan24.pl/img/autoryzacje/finlux-01.svg" },
-    { img: "http://www.elsan24.pl/img/autoryzacje/hitachi-01.svg" },
-    { img: "http://www.elsan24.pl/img/autoryzacje/loewe-01.svg" },
-    { img: "http://www.elsan24.pl/img/autoryzacje/panasonic-01.svg" },
-    { img: "http://www.elsan24.pl/img/autoryzacje/pioneer.svg" },
-    { img: "http://www.elsan24.pl/img/autoryzacje/saeco-01.svg" },
-    { img: "http://www.elsan24.pl/img/autoryzacje/sencor-01.svg" },
-    { img: "http://www.elsan24.pl/img/autoryzacje/sharp-01.svg" },
-    { img: "http://www.elsan24.pl/img/autoryzacje/tcl-01.svg" },
-    { img: "http://www.elsan24.pl/img/autoryzacje/telefunken-01.svg" },
-    { img: "http://www.elsan24.pl/img/autoryzacje/thomson-01.svg" },
-    { img: "http://www.elsan24.pl/img/autoryzacje/toshiba-01.svg" },
-    { img: "http://www.elsan24.pl/img/autoryzacje/vestel-01.svg" },
+    { img: "avent-01.svg" },
+    { img: "finlux-01.svg" },
+    { img: "hitachi-01.svg" },
+    { img: "jvc-01.svg" },
+    { img: "loewe-01.svg" },
+    { img: "panasonic-01.svg" },
+    { img: "pioneer.svg" },
+    { img: "saeco-01.svg" },
+    { img: "sencor-01.svg" },
+    { img: "sharp-01.svg" },
+    { img: "tcl-01.svg" },
+    { img: "telefunken-01.svg" },
+    { img: "thomson-01.svg" },
+    { img: "toshiba-01.svg" },
+    { img: "vestel-01.svg" },
   ];
   slideConfig = {
     "slidesToShow": 3, 
