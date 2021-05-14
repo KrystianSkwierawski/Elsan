@@ -1,5 +1,5 @@
 import { HttpClientModule } from '@angular/common/http';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA  } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -15,10 +15,11 @@ import { NapiszDoNasSectionComponent } from './components/napisz-do-nas-section/
 import { FooterComponent } from './components/footer/footer.component';
 import { FaqSectionComponent } from './components/faq-section/faq-section.component';
 import { GoogleMapSectionComponent } from './components/google-map-section/google-map-section.component';
-
+import { NgxCaptchaModule } from 'ngx-captcha';
 
 
 @NgModule({
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   declarations: [
     AppComponent,
     HomeComponent,
@@ -38,6 +39,7 @@ import { GoogleMapSectionComponent } from './components/google-map-section/googl
     BrowserAnimationsModule,
     AppRoutingModule,
     ReactiveFormsModule, 
+    NgxCaptchaModule,
     SlickCarouselModule,
   ],
   providers: [

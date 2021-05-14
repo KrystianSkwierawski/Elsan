@@ -41,12 +41,15 @@
                         <mat-error *ngIf="form.invalid">Wiadomość jest wymagana</mat-error>
                     </mat-form-field>
 
-
                 </div>
 
-                <button mat-flat-button class="send-message-button px-4 py-2" [disabled]="form.invalid"
-                (click)="onSendMessage()"
-                    aria-label="wyślij">Wyślij</button>
+                <div class="actions">
+                    <ngx-recaptcha2 #captchaElem formControlName="recaptcha" [siteKey]="siteKey">
+                    </ngx-recaptcha2>
+
+                    <button mat-flat-button class="send-message-button px-4 py-2" [disabled]="form.invalid"
+                        (click)="onSendMessage()" aria-label="wyślij">Wyślij</button>
+                </div>
             </form>
 
         </div>

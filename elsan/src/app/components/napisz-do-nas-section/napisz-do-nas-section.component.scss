@@ -21,7 +21,7 @@ h2 {
 .napisz-do-nas {
     margin-top: 2rem;
 
-       @include respond-to(medium) {
+    @include respond-to(medium) {
         width: 80%;
     }
 }
@@ -40,11 +40,18 @@ textarea {
 }
 
 .send-message-button {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    justify-self: center;
     background-color: #e09f20;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ngx-recaptcha2 {
+    align-self: center;
+    margin-bottom: 2rem;
 }
 
 ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
@@ -53,5 +60,5 @@ textarea {
 
 //mat-input focused color
 ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
-    color: #1B80C4;
+    color: #1b80c4;
 }

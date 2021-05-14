@@ -1,6 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+declare var grecaptcha: any;
 
 @Component({
   selector: 'app-napisz-do-nas-section',
@@ -10,6 +11,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class NapiszDoNasSectionComponent implements OnInit {
 
   form: FormGroup
+  siteKey = "6Lf4fNQaAAAAAKZnCBdho21-JcTm_FFqlqJtSNwL";
 
   constructor(private formBuilder: FormBuilder, private http: HttpClient) { };
 
@@ -29,7 +31,8 @@ export class NapiszDoNasSectionComponent implements OnInit {
       }],
       message: ['', {
         validators: [Validators.required]
-      }]
+      }],
+      recaptcha: ['', Validators.required]
     });
   }
 
@@ -97,6 +100,7 @@ export class NapiszDoNasSectionComponent implements OnInit {
     if (form) {
       form.reset();
       this.form.get('topic').setValue("informacje ogólne");
+      grecaptcha.reset();
     }
   }
 
