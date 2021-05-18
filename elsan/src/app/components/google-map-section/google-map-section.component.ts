@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 declare var google: any;
 
 @Component({
@@ -6,18 +6,19 @@ declare var google: any;
   templateUrl: './google-map-section.component.html',
   styleUrls: ['./google-map-section.component.scss']
 })
-export class GoogleMapSectionComponent implements OnInit {
+export class GoogleMapSectionComponent implements AfterViewInit {
 
   map: any;
   elsanLatLng = {lat: 54.4692373, lng: 17.0197254};
 
   constructor() { }
 
-  ngOnInit(): void {
-    this.initMap();
+  async ngAfterViewInit() {
+    await this.initMap();
+    this.setElsanMarker();
   }
 
-  initMap(): void {
+  async initMap() {
     const mapElement = document.getElementById("map");
 
     if (mapElement) {
@@ -26,12 +27,14 @@ export class GoogleMapSectionComponent implements OnInit {
         zoom: 17,
         scrollwheel: false,
       });
-
-      const marker = new google.maps.Marker({
-        position: this.elsanLatLng,
-        map: this.map,
-        title: 'ELSAN'
-      });
     }
+  }
+
+  async setElsanMarker() {
+    new google.maps.Marker({
+      position: this.elsanLatLng,
+      map: this.map,
+      title: 'ELSAN'
+    });
   }
 }
