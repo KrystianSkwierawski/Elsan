@@ -2,11 +2,7 @@
     <div class="partners">
         <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
             <div ngxSlickItem *ngFor="let slide of slides" class="slide" aria-hidden="true">
-                <apm-img src="{{ basePartnersPath + slide.img }}" alt="">
-                    <noscrpt>
-                        <img src="{{ basePartnersPath + slide.img }}" alt="">
-                    </noscrpt>
-                </apm-img>
+                <img src="{{ basePartnersPath + slide.img }}" alt="" loading="lazy" >
             </div>
         </ngx-slick-carousel>
     </div>
