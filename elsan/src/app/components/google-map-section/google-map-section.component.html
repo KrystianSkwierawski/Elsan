@@ -1,3 +1,9 @@
 <section>
-    <div id="map"></div>
+    <div class="map-placeholder" *ngIf="!mapOpened">
+        <div class="map-placeholder__map"></div>
+        <button class="map-placeholder__show-map-button"  mat-raised-button (click)="initMap()">Pokaż mapę</button>
+        <p></p>
+    </div>
+
+    <div class="map" [ngClass]="!mapOpened ? 'map_hidden' : ''"></div>
 </section>

@@ -1,6 +1,5 @@
 @import "../../../scss/shared.scss";
 
-
 section {
     height: 350px;
     margin-top: calc(5% + 2rem);
@@ -11,6 +10,43 @@ section {
     }
 }
 
-#map {
+.map {
     height: 100%;
+
+    &_hidden{
+        height: 0;
+        display: none;
+    }
+}
+
+.map-placeholder {
+    height: 100%;
+    width: 100%;
+    background: url(~src/assets/img/map-placeholder.webp) 50% 50%;
+    background-size: auto 100%;
+    position: relative;
+
+    &::before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        top: 0;
+        position: absolute;
+        left: 0;
+    }
+}
+
+.map-placeholder__show-map-button {
+    padding: 12px 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1rem;
+    transform: translate(-50%, -50%);
+    background-color: #e09f20;
+
+    &:hover{
+        opacity: .9;
+    }
 }
