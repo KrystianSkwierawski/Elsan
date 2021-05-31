@@ -6,20 +6,18 @@ declare var google: any;
   templateUrl: './google-map-section.component.html',
   styleUrls: ['./google-map-section.component.scss']
 })
-export class GoogleMapSectionComponent implements AfterViewInit {
+export class GoogleMapSectionComponent {
 
+  mapOpened: boolean = false;
   map: any;
-  elsanLatLng = {lat: 54.4692373, lng: 17.0197254};
+  elsanLatLng = { lat: 54.4692373, lng: 17.0197254 };
 
   constructor() { }
 
-  async ngAfterViewInit() {
-    await this.initMap();
-    this.setElsanMarker();
-  }
-
   async initMap() {
-    const mapElement = document.getElementById("map");
+    this.mapOpened = true;
+
+    const mapElement = document.querySelector(".map");
 
     if (mapElement) {
       this.map = new google.maps.Map(mapElement, {
@@ -27,6 +25,8 @@ export class GoogleMapSectionComponent implements AfterViewInit {
         zoom: 17,
         scrollwheel: false,
       });
+
+      await this.setElsanMarker();
     }
   }
 
@@ -34,7 +34,8 @@ export class GoogleMapSectionComponent implements AfterViewInit {
     new google.maps.Marker({
       position: this.elsanLatLng,
       map: this.map,
-      title: 'ELSAN'
+      title: 'ELSAN',
+      animation: google.maps.Animation.DROP,
     });
   }
 }
