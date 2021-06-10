@@ -4,7 +4,7 @@
         <h2>Napisz do nas!</h2>
         <div class="container napisz-do-nas">
 
-            <form [formGroup]="form" class="napisz-do-nas__form">
+            <form (ngSubmit)="onSendMessage()" [formGroup]="form" class="napisz-do-nas__form">
                 <div class="row">
                     <mat-form-field appearance="outline" class="col col-md-6">
                         <mat-label>Imię i nazwisko</mat-label>
@@ -48,7 +48,7 @@
                     </ngx-recaptcha2>
 
                     <button mat-flat-button class="send-message-button px-4 py-2" [disabled]="form.invalid"
-                        (click)="onSendMessage()" aria-label="wyślij">Wyślij</button>
+                        type="submit" aria-label="wyślij">Wyślij</button>
                 </div>
             </form>
 
