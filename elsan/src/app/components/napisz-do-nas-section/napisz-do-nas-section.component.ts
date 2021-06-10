@@ -51,24 +51,8 @@ export class NapiszDoNasSectionComponent implements OnInit {
     return '';
   }
 
-  async getMessage(): Promise<Message> {
-    const o_message: Message = {
-      name: this.form.get('name').value,
-      email: this.form.get('email').value,
-      content: this.form.get('message').value,
-
-    };
-
-    return o_message;
-  }
-
-  async onSendMessage() {
-    const message = await this.getMessage();
-    this.sendMessage(message);
-  }
-
-  sendMessage(message: Message) {
-    const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+  onSendMessage(message) {
+   const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
 
     this.http.post('https://formspree.io/f/xyylekjy',
       {
