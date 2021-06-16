@@ -8,25 +8,25 @@
                 <div class="row">
                     <mat-form-field appearance="outline" class="col col-md-6">
                         <mat-label>Imię i nazwisko</mat-label>
-                        <input formControlName="name" matInput required>
+                        <input formControlName="name" matInput >
                         <mat-error *ngIf="form.invalid">Imię i nazwisko jest wymagane</mat-error>
                     </mat-form-field>
 
                     <mat-form-field appearance="outline" class="col col-md-6">
                         <mat-label>Number telefonu</mat-label>
-                        <input formControlName="phoneNumber" matInput required pattern="[0-9]{3}\s?[0-9]{3}\s?[0-9]{3}">
+                        <input formControlName="phoneNumber" matInput  pattern="[0-9]{3}\s?[0-9]{3}\s?[0-9]{3}">
                         <mat-error *ngIf="form.invalid">{{getErrorMessageFieldPhoneNumber()}}</mat-error>
                     </mat-form-field>
 
                     <mat-form-field appearance="outline" class="col col col-md-6">
                         <mat-label>Adres email</mat-label>
-                        <input formControlName="email" matInput required>
+                        <input formControlName="email" matInput >
                         <mat-error *ngIf="form.invalid">Adres email jest wymagany</mat-error>
                     </mat-form-field>
 
                     <mat-form-field appearance="outline" class="col col-md-6">
                         <mat-label>Temat</mat-label>
-                        <mat-select formControlName="topic" required>
+                        <mat-select formControlName="topic" >
                             <mat-option value="informacje ogólne">informacje ogólne</mat-option>
                             <mat-option value="zgłoszenia serwisowe">zgłoszenia serwisowe</mat-option>
                             <mat-option value="współpraca">współpraca</mat-option>
@@ -37,7 +37,7 @@
 
                     <mat-form-field appearance="outline" class="col">
                         <mat-label>Wiadomość</mat-label>
-                        <textarea formControlName="message" matInput required></textarea>
+                        <textarea formControlName="message" matInput ></textarea>
                         <mat-error *ngIf="form.invalid">Wiadomość jest wymagana</mat-error>
                     </mat-form-field>
 
