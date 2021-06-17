@@ -21,7 +21,7 @@ export class NapiszDoNasSectionComponent implements OnInit {
         validators: [Validators.required]
       }],
       phoneNumber: ['', {
-        validators: [Validators.required],
+        validators: [Validators.required, Validators.pattern(/[0-9]{3}\s?[0-9]{3}\s?[0-9]{3}/)],
       }],
       topic: ['informacje ogólne', {
         validators: [Validators.required],

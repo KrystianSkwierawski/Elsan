@@ -14,7 +14,7 @@
 
                     <mat-form-field appearance="outline" class="col col-md-6">
                         <mat-label>Number telefonu</mat-label>
-                        <input formControlName="phoneNumber" matInput  pattern="[0-9]{3}\s?[0-9]{3}\s?[0-9]{3}">
+                        <input formControlName="phoneNumber" matInput>
                         <mat-error *ngIf="form.invalid">{{getErrorMessageFieldPhoneNumber()}}</mat-error>
                     </mat-form-field>
 
