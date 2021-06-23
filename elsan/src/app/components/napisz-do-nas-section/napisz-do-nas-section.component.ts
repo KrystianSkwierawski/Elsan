@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { FormBuilder, FormGroup, FormGroupDirective, Validators } from '@angular/forms';
 declare var grecaptcha: any;
 
 @Component({
@@ -12,6 +12,7 @@ export class NapiszDoNasSectionComponent implements OnInit {
 
   form: FormGroup
   siteKey = "6Lf4fNQaAAAAAKZnCBdho21-JcTm_FFqlqJtSNwL";
+  @ViewChild(FormGroupDirective) formDirective: FormGroupDirective;
 
   constructor(private formBuilder: FormBuilder, private http: HttpClient) { };
 
@@ -52,7 +53,7 @@ export class NapiszDoNasSectionComponent implements OnInit {
   }
 
   onSendMessage(message) {
-   const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+    const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
 
     this.http.post('https://formspree.io/f/xyylekjy',
       {
@@ -79,13 +80,18 @@ export class NapiszDoNasSectionComponent implements OnInit {
   }
 
   resetForm() {
-    const form: HTMLFormElement = <HTMLFormElement>document.querySelector(".napisz-do-nas__form");
+    this.formDirective.resetForm();
 
-    if (form) {
-      form.reset();
-      this.form.get('topic').setValue("informacje ogólne");
-      grecaptcha.reset();
-    }
+    this.form.setValue({
+      name: "",
+      phoneNumber: "",
+      topic: "informacje ogólne",
+      email: "",
+      message: "",
+      recaptcha: ""
+    });
+
+    grecaptcha.reset();
   }
 
 }
