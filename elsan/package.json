@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "predeploy": "ng build --prod --base-href /Elsan/",
+    "deploy": "npx gh-pages -d dist",
     "build:ssr": "ng run WebUI:server:dev",
     "test": "ng test",
     "lint": "ng lint",
