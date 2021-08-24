@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1629811426259,
+  "timestamp": 1629811572853,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -113,7 +113,7 @@
     "/assets/img/partners/toshiba-01.svg": "3767ebf4363b803670bb3480d93e2ad3eff98d30",
     "/assets/img/partners/vestel-01.svg": "ef093b0692f86ae6c3a52431cd6e8e2d044e8b64",
     "/background.b6fd174f028bbbe9d044.webp": "1ff5df8f3baf480561a4d7c1bf1769d198a439ff",
-    "/index.html": "c98066c4b65be4b3ee722c7a9dea15755386e322",
+    "/index.html": "e11f6ac6d9f8dbee96e9e48b483f54c6f8a6356a",
     "/main-es2015.1470e2236f355a148b1a.js": "424cefdccfa1aad165bc0af5769e4640295413e5",
     "/main-es5.1470e2236f355a148b1a.js": "fd0f4cab21e06d4d65da73223b91b83a914817be",
     "/manifest.webmanifest": "b12886387edff668d7ad4f92d1a6d49dc2e2e536",
