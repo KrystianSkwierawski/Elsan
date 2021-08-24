@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1629812897864,
+  "timestamp": 1629814170556,
   "index": "/Elsan/index.html",
   "assetGroups": [
     {
@@ -10,7 +10,18 @@
       "cacheQueryOptions": {
         "ignoreVary": true
       },
-      "urls": [],
+      "urls": [
+        "/index.html",
+        "/main-es2015.1470e2236f355a148b1a.js",
+        "/main-es5.1470e2236f355a148b1a.js",
+        "/manifest.webmanifest",
+        "/polyfills-es2015.61453aece985628de441.js",
+        "/polyfills-es5.974386d92fc222c504c7.js",
+        "/runtime-es2015.a4dadbc03350107420a4.js",
+        "/runtime-es5.a4dadbc03350107420a4.js",
+        "/scripts.386766992a9fc32280a2.js",
+        "/styles.1d0864c0caf9272bc6e3.css"
+      ],
       "patterns": [
         "https:\\/\\/fonts\\.gstatic\\.com",
         "https:\\/\\/fonts\\.googleapis\\.com\\/css2\\?family=Roboto:wght@300;400;500&amp;display=swap",
@@ -102,11 +113,21 @@
     "/assets/img/partners/toshiba-01.svg": "3767ebf4363b803670bb3480d93e2ad3eff98d30",
     "/assets/img/partners/vestel-01.svg": "ef093b0692f86ae6c3a52431cd6e8e2d044e8b64",
     "/background.b6fd174f028bbbe9d044.webp": "1ff5df8f3baf480561a4d7c1bf1769d198a439ff",
+    "/index.html": "e11f6ac6d9f8dbee96e9e48b483f54c6f8a6356a",
+    "/main-es2015.1470e2236f355a148b1a.js": "424cefdccfa1aad165bc0af5769e4640295413e5",
+    "/main-es5.1470e2236f355a148b1a.js": "fd0f4cab21e06d4d65da73223b91b83a914817be",
+    "/manifest.webmanifest": "b12886387edff668d7ad4f92d1a6d49dc2e2e536",
     "/map-placeholder.78c67cab5e92e7346148.webp": "21d82a655b78870328d6e94e4dff802f52a3663d",
+    "/polyfills-es2015.61453aece985628de441.js": "e0beba5d1ab83a602698e7bd630f7552b06cb1e1",
+    "/polyfills-es5.974386d92fc222c504c7.js": "cbe7e6bd5b318f0dd79d13c78098e77be8b9cae8",
+    "/runtime-es2015.a4dadbc03350107420a4.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/runtime-es5.a4dadbc03350107420a4.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/scripts.386766992a9fc32280a2.js": "764e8f98e77ca250c9c530d102e73b19e14ad223",
     "/slick.2630a3e3eab21c607e21.svg": "17f63c6f6131389462ba3d814b7ddf83344705f9",
     "/slick.295183786cd8a1389865.woff": "af91c12f0f406a4f801aeb3b398768fe41d8f864",
     "/slick.a4e97f5a2a64f0ab1323.eot": "2dff0768f4c0a53228761eab917e2c65556042d4",
-    "/slick.c94f7671dcc99dce43e2.ttf": "3331eebdd4ba348ef25abe00c39ffbe867d46575"
+    "/slick.c94f7671dcc99dce43e2.ttf": "3331eebdd4ba348ef25abe00c39ffbe867d46575",
+    "/styles.1d0864c0caf9272bc6e3.css": "5a4f738d86fc978d1a1016e433aaa60b69f0e746"
   },
   "navigationUrls": [
     {
