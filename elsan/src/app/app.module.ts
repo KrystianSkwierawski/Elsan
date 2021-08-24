@@ -16,6 +16,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FaqSectionComponent } from './components/faq-section/faq-section.component';
 import { GoogleMapSectionComponent } from './components/google-map-section/google-map-section.component';
 import { NgxCaptchaModule } from 'ngx-captcha';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -41,6 +43,12 @@ import { NgxCaptchaModule } from 'ngx-captcha';
     ReactiveFormsModule, 
     NgxCaptchaModule,
     SlickCarouselModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    }),
   ],
   providers: [
  
