@@ -1,0 +1,151 @@
+{
+  "configVersion": 1,
+  "timestamp": 1629811426259,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/index.html",
+        "/main-es2015.1470e2236f355a148b1a.js",
+        "/main-es5.1470e2236f355a148b1a.js",
+        "/manifest.webmanifest",
+        "/polyfills-es2015.61453aece985628de441.js",
+        "/polyfills-es5.974386d92fc222c504c7.js",
+        "/runtime-es2015.a4dadbc03350107420a4.js",
+        "/runtime-es5.a4dadbc03350107420a4.js",
+        "/scripts.386766992a9fc32280a2.js",
+        "/styles.1d0864c0caf9272bc6e3.css"
+      ],
+      "patterns": [
+        "https:\\/\\/fonts\\.gstatic\\.com",
+        "https:\\/\\/fonts\\.googleapis\\.com\\/css2\\?family=Roboto:wght@300;400;500&amp;display=swap",
+        "https:\\/\\/fonts\\.googleapis\\.com\\/icon\\?family=Material\\+Icons"
+      ]
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/ajax-loader.fb6f3c230cb846e25247.gif",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/img/background.webp",
+        "/assets/img/czym-sie-zajmujemy/agd.svg",
+        "/assets/img/czym-sie-zajmujemy/it.svg",
+        "/assets/img/czym-sie-zajmujemy/rtv.svg",
+        "/assets/img/czym-sie-zajmujemy/spec.svg",
+        "/assets/img/icon.png",
+        "/assets/img/logo.svg",
+        "/assets/img/map-placeholder.webp",
+        "/assets/img/partners/avent-01.svg",
+        "/assets/img/partners/finlux-01.svg",
+        "/assets/img/partners/hitachi-01.svg",
+        "/assets/img/partners/jvc-01.svg",
+        "/assets/img/partners/loewe-01.svg",
+        "/assets/img/partners/panasonic-01.svg",
+        "/assets/img/partners/pioneer.svg",
+        "/assets/img/partners/saeco-01.svg",
+        "/assets/img/partners/sencor-01.svg",
+        "/assets/img/partners/sharp-01.svg",
+        "/assets/img/partners/tcl-01.svg",
+        "/assets/img/partners/telefunken-01.svg",
+        "/assets/img/partners/thomson-01.svg",
+        "/assets/img/partners/toshiba-01.svg",
+        "/assets/img/partners/vestel-01.svg",
+        "/background.b6fd174f028bbbe9d044.webp",
+        "/map-placeholder.78c67cab5e92e7346148.webp",
+        "/slick.2630a3e3eab21c607e21.svg",
+        "/slick.295183786cd8a1389865.woff",
+        "/slick.a4e97f5a2a64f0ab1323.eot",
+        "/slick.c94f7671dcc99dce43e2.ttf"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/ajax-loader.fb6f3c230cb846e25247.gif": "7a1aa43614396382bb15e5fde574d9cdcd21698f",
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/img/background.webp": "1ff5df8f3baf480561a4d7c1bf1769d198a439ff",
+    "/assets/img/czym-sie-zajmujemy/agd.svg": "e67069ac0a9ca4f22bf9fe5a08b60ade9ac74373",
+    "/assets/img/czym-sie-zajmujemy/it.svg": "102e5d9785e377f1748756d335e936a7e073aa00",
+    "/assets/img/czym-sie-zajmujemy/rtv.svg": "29c286aefa444dba07c7e67ec3ecfd5f01f9b5f9",
+    "/assets/img/czym-sie-zajmujemy/spec.svg": "bdcab441b3d609451b0a29b462ed62ea2d2af2be",
+    "/assets/img/icon.png": "7b5da921ae5180a4b3246ba0b9ff739473244f85",
+    "/assets/img/logo.svg": "f476f6ae72219d61a722caddc3316778487cf20d",
+    "/assets/img/map-placeholder.webp": "21d82a655b78870328d6e94e4dff802f52a3663d",
+    "/assets/img/partners/avent-01.svg": "e769b05de827f843a17702dde559a8eb530d76c8",
+    "/assets/img/partners/finlux-01.svg": "253f9c40c897128ab632a3082036e7fc06638f4f",
+    "/assets/img/partners/hitachi-01.svg": "b43230a2ac7016d78fd4be48756ba5d76f5d90af",
+    "/assets/img/partners/jvc-01.svg": "68b6a1b925c67550cceb38bbd32c88a804e9da2b",
+    "/assets/img/partners/loewe-01.svg": "25198ef81f7f0980be64e5aed94be8cacf7ad3f8",
+    "/assets/img/partners/panasonic-01.svg": "5ea9355dd38f55fbf6ff8638c9a5293fd5561023",
+    "/assets/img/partners/pioneer.svg": "5448d597481660ee4d188e70b2de8865e0286c50",
+    "/assets/img/partners/saeco-01.svg": "ec6c320db5b168fd2da260ffbe84323cf3fc04f2",
+    "/assets/img/partners/sencor-01.svg": "9055e631dc0ff789c482fb7428d45660b2a0c32e",
+    "/assets/img/partners/sharp-01.svg": "6c6709296e7975d001ab6dba3a55ccc2fcfc118f",
+    "/assets/img/partners/tcl-01.svg": "6c711ef37311d0fb1a4b5ca903640b3b3cc94641",
+    "/assets/img/partners/telefunken-01.svg": "e1018dabb65f3cb5c120b0b4426c2f0cedd729d7",
+    "/assets/img/partners/thomson-01.svg": "5ccddd0897f9a8da457ce6fb9eae5c316c6ed610",
+    "/assets/img/partners/toshiba-01.svg": "3767ebf4363b803670bb3480d93e2ad3eff98d30",
+    "/assets/img/partners/vestel-01.svg": "ef093b0692f86ae6c3a52431cd6e8e2d044e8b64",
+    "/background.b6fd174f028bbbe9d044.webp": "1ff5df8f3baf480561a4d7c1bf1769d198a439ff",
+    "/index.html": "c98066c4b65be4b3ee722c7a9dea15755386e322",
+    "/main-es2015.1470e2236f355a148b1a.js": "424cefdccfa1aad165bc0af5769e4640295413e5",
+    "/main-es5.1470e2236f355a148b1a.js": "fd0f4cab21e06d4d65da73223b91b83a914817be",
+    "/manifest.webmanifest": "b12886387edff668d7ad4f92d1a6d49dc2e2e536",
+    "/map-placeholder.78c67cab5e92e7346148.webp": "21d82a655b78870328d6e94e4dff802f52a3663d",
+    "/polyfills-es2015.61453aece985628de441.js": "e0beba5d1ab83a602698e7bd630f7552b06cb1e1",
+    "/polyfills-es5.974386d92fc222c504c7.js": "cbe7e6bd5b318f0dd79d13c78098e77be8b9cae8",
+    "/runtime-es2015.a4dadbc03350107420a4.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/runtime-es5.a4dadbc03350107420a4.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/scripts.386766992a9fc32280a2.js": "764e8f98e77ca250c9c530d102e73b19e14ad223",
+    "/slick.2630a3e3eab21c607e21.svg": "17f63c6f6131389462ba3d814b7ddf83344705f9",
+    "/slick.295183786cd8a1389865.woff": "af91c12f0f406a4f801aeb3b398768fe41d8f864",
+    "/slick.a4e97f5a2a64f0ab1323.eot": "2dff0768f4c0a53228761eab917e2c65556042d4",
+    "/slick.c94f7671dcc99dce43e2.ttf": "3331eebdd4ba348ef25abe00c39ffbe867d46575",
+    "/styles.1d0864c0caf9272bc6e3.css": "5a4f738d86fc978d1a1016e433aaa60b69f0e746"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
