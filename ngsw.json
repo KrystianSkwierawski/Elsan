@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1629819082228,
+  "timestamp": 1630596770798,
   "index": "/Elsan/index.html",
   "assetGroups": [
     {
@@ -12,8 +12,8 @@
       },
       "urls": [
         "/Elsan/index.html",
-        "/Elsan/main-es2015.0b26437a529ef043ab46.js",
-        "/Elsan/main-es5.0b26437a529ef043ab46.js",
+        "/Elsan/main-es2015.46debf35bce54a6f4abf.js",
+        "/Elsan/main-es5.46debf35bce54a6f4abf.js",
         "/Elsan/manifest.webmanifest",
         "/Elsan/polyfills-es2015.61453aece985628de441.js",
         "/Elsan/polyfills-es5.974386d92fc222c504c7.js",
@@ -109,9 +109,9 @@
     "/Elsan/assets/img/partners/toshiba-01.svg": "3767ebf4363b803670bb3480d93e2ad3eff98d30",
     "/Elsan/assets/img/partners/vestel-01.svg": "ef093b0692f86ae6c3a52431cd6e8e2d044e8b64",
     "/Elsan/background.b6fd174f028bbbe9d044.webp": "1ff5df8f3baf480561a4d7c1bf1769d198a439ff",
-    "/Elsan/index.html": "3ad0ad6c7d52c9e7af0b12259cebe933c249d665",
-    "/Elsan/main-es2015.0b26437a529ef043ab46.js": "4717864422bec330b1d9cf46211718f6523df2fb",
-    "/Elsan/main-es5.0b26437a529ef043ab46.js": "c0ec728aadbd62c72081f5ad5aa4f25652cf61e3",
+    "/Elsan/index.html": "75a075cd80e7892027bf190702377d51843d1ef5",
+    "/Elsan/main-es2015.46debf35bce54a6f4abf.js": "4717864422bec330b1d9cf46211718f6523df2fb",
+    "/Elsan/main-es5.46debf35bce54a6f4abf.js": "c0ec728aadbd62c72081f5ad5aa4f25652cf61e3",
     "/Elsan/manifest.webmanifest": "de335a47ae679cb0e35bb94268f878483102dd75",
     "/Elsan/map-placeholder.78c67cab5e92e7346148.webp": "21d82a655b78870328d6e94e4dff802f52a3663d",
     "/Elsan/polyfills-es2015.61453aece985628de441.js": "e0beba5d1ab83a602698e7bd630f7552b06cb1e1",
