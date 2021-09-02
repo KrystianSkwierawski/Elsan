@@ -10,11 +10,11 @@ declare var grecaptcha: any;
 })
 export class NapiszDoNasSectionComponent implements OnInit {
 
-  form: FormGroup
-  siteKey = "6Lf4fNQaAAAAAKZnCBdho21-JcTm_FFqlqJtSNwL";
+  form: FormGroup;
+  siteKey = '6Lf4fNQaAAAAAKZnCBdho21-JcTm_FFqlqJtSNwL';
   @ViewChild(FormGroupDirective) formDirective: FormGroupDirective;
 
-  constructor(private formBuilder: FormBuilder, private http: HttpClient) { };
+  constructor(private formBuilder: FormBuilder, private http: HttpClient) { }
 
   ngOnInit(): void {
     this.form = this.formBuilder.group({
@@ -72,23 +72,23 @@ export class NapiszDoNasSectionComponent implements OnInit {
     if (response.ok) {
       this.resetForm();
 
-      alert("Wiadomość wysłana");
+      alert('Wiadomość wysłana');
       return;
     }
 
-    alert("Wiadomość nie wysłana");
+    alert('Wiadomość nie wysłana');
   }
 
   resetForm() {
     this.formDirective.resetForm();
 
     this.form.setValue({
-      name: "",
-      phoneNumber: "",
-      topic: "informacje ogólne",
-      email: "",
-      message: "",
-      recaptcha: ""
+      name: '',
+      phoneNumber: '',
+      topic: 'informacje ogólne',
+      email: '',
+      message: '',
+      recaptcha: ''
     });
 
     grecaptcha.reset();

@@ -1,5 +1,5 @@
-interface Faq{
-    answer: string,
-    question: string,
-    isSelected: boolean
+interface Faq {
+    answer: string;
+    question: string;
+    isSelected: boolean;
 }

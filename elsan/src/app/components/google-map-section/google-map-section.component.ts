@@ -8,7 +8,7 @@ declare var google: any;
 })
 export class GoogleMapSectionComponent {
 
-  mapOpened: boolean = false;
+  mapOpened = false;
   map: any;
   elsanLatLng = { lat: 54.4692373, lng: 17.0197254 };
 
@@ -17,7 +17,7 @@ export class GoogleMapSectionComponent {
   async initMap() {
     this.mapOpened = true;
 
-    const mapElement = document.querySelector(".map");
+    const mapElement = document.querySelector('.map');
 
     if (mapElement) {
       this.map = new google.maps.Map(mapElement, {

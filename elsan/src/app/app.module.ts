@@ -40,7 +40,7 @@ import { environment } from '../environments/environment';
     FormsModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    ReactiveFormsModule, 
+    ReactiveFormsModule,
     NgxCaptchaModule,
     SlickCarouselModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
@@ -51,7 +51,7 @@ import { environment } from '../environments/environment';
     }),
   ],
   providers: [
- 
+
   ],
   bootstrap: [AppComponent]
 })

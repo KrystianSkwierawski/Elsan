@@ -1,5 +1,5 @@
-interface Message{
-    name: string,
-    email: string,
-    content: string
+interface Message {
+    name: string;
+    email: string;
+    content: string;
 }
