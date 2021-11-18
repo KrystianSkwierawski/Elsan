@@ -1,4 +1,4 @@
-## What is Elsan?
+## What is the Elsan?
 Angular website for a service center mainly dealing with IT equipment. 
 
 ## Why this project was created?
