@@ -24,6 +24,5 @@ The project is fully functional but needs a few small tweaks. Because the projec
  * JustColorPicker
  * Visual Studio Code
  * Git
- * Angular Material
 
 
