@@ -10,8 +10,7 @@ I didn't know any business requirements, so I just looked at their site and pres
 ## Summary
 The project is fully functional but needs a few small tweaks. Because the project will not be officially hosted is abandoned.
 
-## Tools: 
-
+## Tools
 ### Front-end
  * Angular
  * TypeScript
